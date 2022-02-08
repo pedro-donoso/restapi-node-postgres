@@ -14,13 +14,16 @@ const pool = new Pool({
 const getUsers = async (req, res) => {
     //Respuesta de la consulta
     const response = await pool.query('SELECT * FROM users');
-    //Formato de la respuesta
+    //Formato de la respuesta, se puede definir estado diferente
     res.status(200).json(response.rows);
 }
 
 // Obtener usuario por ID
 const getUserById = async (req, res) => {
-    res.send('User ID')
+    const id = req.params.id;
+    // Consulta Postgresql
+    const response = await pool.query('SELECT * FROM users WHERE id = $1', [id]);
+    res.json(response.rows);
 }
 
 //createUser
