@@ -46,8 +46,15 @@ const createUser = async (req, res) => {
 const updateUser = async (req, res) => {
     const id = req.params.id;
     const { name, email } = req.body;
-    console.log(id, name, email);
-    res.send('User Updated')
+    // Consulta postgresql
+    const response = await pool.query('UPDATE users SET name = $1, email = $2 WHERE id = $3', [
+       name,
+        email,
+        id 
+    ]);
+    // Mostrar respuesta
+    console.log(response);
+    res.json('User Updated successfully')
 }
 
 //Función deleteUser
