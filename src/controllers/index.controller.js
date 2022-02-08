@@ -26,7 +26,12 @@ const createUser = async (req, res) => {
     const response = await pool.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email]);
     console.log(response);
      //Mensaje de respuesta
-    res.send('user created');
+    res.json({
+        message: 'User Added Succesfully',
+        body: {
+            user: {name, email}
+        }
+    });
 }
 
 //Exporto función getUsers
