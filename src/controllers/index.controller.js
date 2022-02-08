@@ -20,8 +20,12 @@ const getUsers = async (req, res) => {
 
 //createUser
 const createUser = async (req, res) => {
-    console.log(req.body);
-    //Mensaje de respuesta
+    //Obtener datos del body
+    const { name, email } = req.body;
+    //Insertar nombre y correo en tabla users
+    const response = await pool.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email]);
+    console.log(response);
+     //Mensaje de respuesta
     res.send('user created');
 }
 

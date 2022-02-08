@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 // Middlewares
-// Método para entender formato json
+// Formato para enviar datos en formato json POST
 app.use(express.json());
 // Método para entender elementos de texto de un formulario
 app.use(express.urlencoded({extended: false}));
