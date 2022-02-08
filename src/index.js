@@ -3,8 +3,10 @@ const express = require('express');
 // Ejecuto el módulo Express y lo guardo en una constante App
 const app = express();
 
-// Middlewares: Método para entender formato json
+// Middlewares
+// Método para entender formato json
 app.use(express.json());
+// Método para entender elementos de texto de un formulario
 app.use(express.urlencoded({extended: false}));
 
 // Routes: App requiere archivo index
