@@ -10,14 +10,20 @@ const pool = new Pool({
     port: '5432'
 });
 
-//Consulta a Postgresql
+//Consulta asíncrona a Postgresql
 const getUsers = async (req, res) => {
+    //Respuesta de la consulta
     const response = await pool.query('SELECT * FROM users');
-    console.log(response.rows);
-    res.send('users');
+    //Formato de la respuesta
+    res.status(200).json(response.rows);
+}
+
+const createUser = async (req, res) => {
+    
 }
 
 //Exporto función getUsers
 module.exports = {
-    getUsers
+    getUsers,
+    createUser
 }
