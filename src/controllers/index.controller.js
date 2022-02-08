@@ -19,7 +19,7 @@ const getUsers = async (req, res) => {
 }
 
 // Obtener usuario por ID
-const getUsersById = async (req, res) => {
+const getUserById = async (req, res) => {
     res.send('User ID')
 }
 
@@ -42,7 +42,7 @@ const createUser = async (req, res) => {
 //Exporto función getUsers
 module.exports = {
     getUsers,
-    getUsersById,
+    getUserById,
     createUser
     
 }
