@@ -18,8 +18,11 @@ const getUsers = async (req, res) => {
     res.status(200).json(response.rows);
 }
 
+//createUser
 const createUser = async (req, res) => {
-    
+    console.log(req.body);
+    //Mensaje de respuesta
+    res.send('user created');
 }
 
 //Exporto función getUsers
