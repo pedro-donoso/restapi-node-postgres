@@ -42,10 +42,19 @@ const createUser = async (req, res) => {
     });
 }
 
+//Función deleteUser
+const deleteUser = async (req, res) => {
+    const id = req.params.id;
+    // Consulta para eliminar dato por ID
+    const response = await pool.query('DELETE FROM users WHERE id = $1', [id]);
+    console.log(response);
+    res.json(`User ${id} deleted successfully`)
+};
+
 //Exporto función getUsers
 module.exports = {
     getUsers,
     getUserById,
-    createUser
-    
+    createUser,
+    deleteUser
 }
