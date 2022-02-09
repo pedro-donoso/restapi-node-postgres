@@ -54,7 +54,7 @@ Method POST -> JSON
 
 ### UPDATE
 
-9. Method PUT -> Update Users
+9. Method PUT -> Update Users by ID
 
 ![update](https://user-images.githubusercontent.com/68760595/153231413-cf69656d-7733-4752-bf44-5da774d465b2.PNG)
 
