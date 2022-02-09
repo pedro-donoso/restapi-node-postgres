@@ -30,9 +30,16 @@ Method POST -> JSON
 
 7. In Extension VSCode "Thunder Client":
 
-Method GET -> Users by ID
+Method GET -> Search Users by ID
 
 ![GET](https://user-images.githubusercontent.com/68760595/153227850-254086c2-e76b-4636-8a86-139120767633.PNG)
+
+8.  In Extension VSCode "Thunder Client":
+
+Method DELETE -> Delete Users by ID
+
+![DELETE](https://user-images.githubusercontent.com/68760595/153228710-6fd9aaef-ae62-4491-a523-5163db8ccb65.PNG)
+
 
 
 
