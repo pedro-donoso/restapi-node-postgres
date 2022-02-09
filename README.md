@@ -52,7 +52,17 @@ Method POST -> JSON
 
 ![DELETE](https://user-images.githubusercontent.com/68760595/153228710-6fd9aaef-ae62-4491-a523-5163db8ccb65.PNG)
 
+### UPDATE
 
+9. Method PUT -> Update Users
+
+![update](https://user-images.githubusercontent.com/68760595/153231413-cf69656d-7733-4752-bf44-5da774d465b2.PNG)
+
+* View changes -> Method GET
+
+```
+http://localhost:3000/users
+```
 
 
 
