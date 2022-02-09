@@ -18,6 +18,9 @@ npm run dev
 
 ![vscode](https://user-images.githubusercontent.com/68760595/153223147-bf89fd18-0161-46eb-864d-087050e5d9ee.PNG)
 
+5. View GET USERS in localhost:
+
+![local](https://user-images.githubusercontent.com/68760595/153224051-03483e7b-e46a-4dae-89f8-c9882d82a7d0.PNG)
 
 
 
