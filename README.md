@@ -14,7 +14,7 @@ npm i express pg nodemon
 npm run dev
 ```
 
-4. Configuration in PSQL, password: password
+4. Configuration in PSQL:
 
 ![vscode](https://user-images.githubusercontent.com/68760595/153223147-bf89fd18-0161-46eb-864d-087050e5d9ee.PNG)
 
