@@ -28,6 +28,11 @@ Method POST -> JSON
 
 ![thunder](https://user-images.githubusercontent.com/68760595/153226782-33827176-ff23-453c-8fd9-083a28036ff2.PNG)
 
+7. In Extension VSCode "Thunder Client":
+
+Method GET -> Users by ID
+
+![GET](https://user-images.githubusercontent.com/68760595/153227850-254086c2-e76b-4636-8a86-139120767633.PNG)
 
 
 
