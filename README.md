@@ -22,6 +22,13 @@ npm run dev
 
 ![local](https://user-images.githubusercontent.com/68760595/153224051-03483e7b-e46a-4dae-89f8-c9882d82a7d0.PNG)
 
+6. In Extension VSCode "Thunder Client":
+
+Method POST -> JSON
+
+![thunder](https://user-images.githubusercontent.com/68760595/153226782-33827176-ff23-453c-8fd9-083a28036ff2.PNG)
+
+
 
 
 
